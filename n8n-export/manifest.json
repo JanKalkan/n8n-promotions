@@ -1,0 +1,108 @@
+{
+	"packageFormatVersion": "1",
+	"exportedAt": "2026-10-09T12:52:10.816Z",
+	"sourceN8nVersion": "2.43.0",
+	"sourceId": "b72dbcfaf668581d594e2a1b7d8664716b2862f22b4dcffe7d2a32d20023f629",
+	"workflows": [
+		{
+			"id": "LxToZQjcz70UUmgv",
+			"name": "Auto-1",
+			"target": "projects/ligo-ra04yzgZ6dfpkdJA/folders/automations-wnLxnK4g9fcTZD31/workflows/auto-1-LxToZQjcz70UUmgv"
+		},
+		{
+			"id": "9H4f3zf7z6g4KRLP",
+			"name": "Auto-2",
+			"target": "projects/ligo-ra04yzgZ6dfpkdJA/folders/automations-wnLxnK4g9fcTZD31/workflows/auto-2-9H4f3zf7z6g4KRLP"
+		},
+		{
+			"id": "TVaqx9jG6YQ4fAXC",
+			"name": "My workflow",
+			"target": "projects/ligo-ra04yzgZ6dfpkdJA/workflows/my-workflow-TVaqx9jG6YQ4fAXC"
+		}
+	],
+	"folders": [
+		{
+			"id": "wnLxnK4g9fcTZD31",
+			"name": "Automations",
+			"target": "projects/ligo-ra04yzgZ6dfpkdJA/folders/automations-wnLxnK4g9fcTZD31"
+		}
+	],
+	"projects": [
+		{
+			"id": "ra04yzgZ6dfpkdJA",
+			"name": "Ligo",
+			"target": "projects/ligo-ra04yzgZ6dfpkdJA"
+		}
+	],
+	"dataTables": [
+		{
+			"id": "C94TXt7kvRncXjcQ",
+			"name": "meta-data-ligo",
+			"target": "projects/ligo-ra04yzgZ6dfpkdJA/data-tables/meta-data-ligo-C94TXt7kvRncXjcQ"
+		}
+	],
+	"requirements": {
+		"dataTables": [
+			{
+				"id": "C94TXt7kvRncXjcQ",
+				"name": "meta-data-ligo",
+				"usedBy": [
+					{
+						"kind": "workflow",
+						"id": "TVaqx9jG6YQ4fAXC"
+					}
+				]
+			}
+		],
+		"nodeTypes": [
+			{
+				"type": "n8n-nodes-base.scheduleTrigger",
+				"typeVersion": 1.4,
+				"usedBy": [
+					{
+						"kind": "workflow",
+						"id": "LxToZQjcz70UUmgv"
+					}
+				]
+			},
+			{
+				"type": "n8n-nodes-base.code",
+				"typeVersion": 2,
+				"usedBy": [
+					{
+						"kind": "workflow",
+						"id": "LxToZQjcz70UUmgv"
+					},
+					{
+						"kind": "workflow",
+						"id": "9H4f3zf7z6g4KRLP"
+					}
+				]
+			},
+			{
+				"type": "n8n-nodes-base.manualTrigger",
+				"typeVersion": 1,
+				"usedBy": [
+					{
+						"kind": "workflow",
+						"id": "9H4f3zf7z6g4KRLP"
+					},
+					{
+						"kind": "workflow",
+						"id": "TVaqx9jG6YQ4fAXC"
+					}
+				]
+			},
+			{
+				"type": "n8n-nodes-base.dataTable",
+				"typeVersion": 1.1,
+				"usedBy": [
+					{
+						"kind": "workflow",
+						"id": "TVaqx9jG6YQ4fAXC"
+					}
+				]
+			}
+		]
+	}
+}

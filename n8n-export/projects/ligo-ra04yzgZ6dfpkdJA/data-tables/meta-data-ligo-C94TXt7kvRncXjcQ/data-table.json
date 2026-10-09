@@ -1,0 +1,24 @@
+{
+	"id": "C94TXt7kvRncXjcQ",
+	"name": "meta-data-ligo",
+	"columns": [
+		{
+			"id": "nHemxugqMAGolP7p",
+			"name": "Foo",
+			"type": "string",
+			"index": 0
+		},
+		{
+			"id": "HfIpWYYSONnRs1vk",
+			"name": "Bar",
+			"type": "number",
+			"index": 1
+		},
+		{
+			"id": "0vQaLlRS6mnqN5mx",
+			"name": "When",
+			"type": "date",
+			"index": 2
+		}
+	]
+}

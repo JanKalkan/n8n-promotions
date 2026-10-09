@@ -1,0 +1,56 @@
+{
+	"id": "LxToZQjcz70UUmgv",
+	"name": "Auto-1",
+	"nodes": [
+		{
+			"id": "450373ac-0864-45f1-898f-419c4637277c",
+			"name": "Schedule Trigger",
+			"type": "n8n-nodes-base.scheduleTrigger",
+			"typeVersion": 1.4,
+			"position": [
+				0,
+				0
+			],
+			"parameters": {
+				"rule": {
+					"interval": [
+						{}
+					]
+				}
+			}
+		},
+		{
+			"id": "05c81b39-96e6-4f2c-8029-e79518e9df53",
+			"name": "Code in JavaScript",
+			"type": "n8n-nodes-base.code",
+			"typeVersion": 2,
+			"position": [
+				224,
+				0
+			],
+			"parameters": {
+				"jsCode": "// Loop over input items and add a new field called 'myNewField' to the JSON of each one\nfor (const item of $input.all()) {\n  item.json.myNewField = 1;\n}\n\nreturn $input.all();"
+			}
+		}
+	],
+	"connections": {
+		"Schedule Trigger": {
+			"main": [
+				[
+					{
+						"node": "Code in JavaScript",
+						"type": "main",
+						"index": 0
+					}
+				]
+			]
+		}
+	},
+	"settings": {
+		"executionOrder": "v1",
+		"binaryMode": "separate"
+	},
+	"parentFolderId": "wnLxnK4g9fcTZD31",
+	"isArchived": false,
+	"tagIds": []
+}
