@@ -1,18 +1,18 @@
 {
 	"packageFormatVersion": "1",
-	"exportedAt": "2026-10-09T12:54:27.609Z",
+	"exportedAt": "2026-10-09T12:55:28.697Z",
 	"sourceN8nVersion": "2.43.0",
 	"sourceId": "b72dbcfaf668581d594e2a1b7d8664716b2862f22b4dcffe7d2a32d20023f629",
 	"workflows": [
 		{
 			"id": "LxToZQjcz70UUmgv",
 			"name": "Auto-1",
-			"target": "projects/ligo-ra04yzgZ6dfpkdJA/folders/automations-wnLxnK4g9fcTZD31/workflows/auto-1-LxToZQjcz70UUmgv"
+			"target": "projects/ligo-ra04yzgZ6dfpkdJA/folders/automation-wnLxnK4g9fcTZD31/workflows/auto-1-LxToZQjcz70UUmgv"
 		},
 		{
 			"id": "9H4f3zf7z6g4KRLP",
 			"name": "Auto-2",
-			"target": "projects/ligo-ra04yzgZ6dfpkdJA/folders/automations-wnLxnK4g9fcTZD31/workflows/auto-2-9H4f3zf7z6g4KRLP"
+			"target": "projects/ligo-ra04yzgZ6dfpkdJA/folders/automation-wnLxnK4g9fcTZD31/workflows/auto-2-9H4f3zf7z6g4KRLP"
 		},
 		{
 			"id": "TVaqx9jG6YQ4fAXC",
@@ -23,8 +23,8 @@
 	"folders": [
 		{
 			"id": "wnLxnK4g9fcTZD31",
-			"name": "Automations",
-			"target": "projects/ligo-ra04yzgZ6dfpkdJA/folders/automations-wnLxnK4g9fcTZD31"
+			"name": "Automation",
+			"target": "projects/ligo-ra04yzgZ6dfpkdJA/folders/automation-wnLxnK4g9fcTZD31"
 		}
 	],
 	"projects": [
@@ -56,30 +56,6 @@
 		],
 		"nodeTypes": [
 			{
-				"type": "n8n-nodes-base.scheduleTrigger",
-				"typeVersion": 1.4,
-				"usedBy": [
-					{
-						"kind": "workflow",
-						"id": "LxToZQjcz70UUmgv"
-					}
-				]
-			},
-			{
-				"type": "n8n-nodes-base.code",
-				"typeVersion": 2,
-				"usedBy": [
-					{
-						"kind": "workflow",
-						"id": "9H4f3zf7z6g4KRLP"
-					},
-					{
-						"kind": "workflow",
-						"id": "LxToZQjcz70UUmgv"
-					}
-				]
-			},
-			{
 				"type": "n8n-nodes-base.manualTrigger",
 				"typeVersion": 1,
 				"usedBy": [
@@ -100,6 +76,30 @@
 					{
 						"kind": "workflow",
 						"id": "TVaqx9jG6YQ4fAXC"
+					}
+				]
+			},
+			{
+				"type": "n8n-nodes-base.scheduleTrigger",
+				"typeVersion": 1.4,
+				"usedBy": [
+					{
+						"kind": "workflow",
+						"id": "LxToZQjcz70UUmgv"
+					}
+				]
+			},
+			{
+				"type": "n8n-nodes-base.code",
+				"typeVersion": 2,
+				"usedBy": [
+					{
+						"kind": "workflow",
+						"id": "9H4f3zf7z6g4KRLP"
+					},
+					{
+						"kind": "workflow",
+						"id": "LxToZQjcz70UUmgv"
 					}
 				]
 			}
