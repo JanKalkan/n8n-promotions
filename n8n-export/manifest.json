@@ -1,6 +1,6 @@
 {
 	"packageFormatVersion": "1",
-	"exportedAt": "2026-10-09T12:55:28.697Z",
+	"exportedAt": "2026-10-09T13:09:03.545Z",
 	"sourceN8nVersion": "2.43.0",
 	"sourceId": "b72dbcfaf668581d594e2a1b7d8664716b2862f22b4dcffe7d2a32d20023f629",
 	"workflows": [
@@ -70,16 +70,6 @@
 				]
 			},
 			{
-				"type": "n8n-nodes-base.dataTable",
-				"typeVersion": 1.1,
-				"usedBy": [
-					{
-						"kind": "workflow",
-						"id": "TVaqx9jG6YQ4fAXC"
-					}
-				]
-			},
-			{
 				"type": "n8n-nodes-base.scheduleTrigger",
 				"typeVersion": 1.4,
 				"usedBy": [
@@ -100,6 +90,16 @@
 					{
 						"kind": "workflow",
 						"id": "LxToZQjcz70UUmgv"
+					}
+				]
+			},
+			{
+				"type": "n8n-nodes-base.dataTable",
+				"typeVersion": 1.1,
+				"usedBy": [
+					{
+						"kind": "workflow",
+						"id": "TVaqx9jG6YQ4fAXC"
 					}
 				]
 			}
