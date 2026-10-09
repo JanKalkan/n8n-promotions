@@ -19,12 +19,6 @@
 			"name": "When",
 			"type": "date",
 			"index": 2
-		},
-		{
-			"id": "G4WGKtS1OpML62Fq",
-			"name": "Added1",
-			"type": "string",
-			"index": 3
 		}
 	]
 }
